@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="sun.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>Weather App</header>
+    <div class="input-container">
+      <input
+        type="search"
+        name="city"
+        id="enterCityName"
+        placeholder="Enter City Name"
+      />
+      <button type="submit">Get Weather</button>
+    </div>
+    <div class="message-container">
+      <h5 id="message"></h5>
+    </div>
+
+    <div class="container-location">
+      <div class="location">
+        <canvas id="icon1" width="128" height="128"></canvas>
+        <!-- <img class="weather-icon" src="" alt="Icon" /> -->
+        <h1 class="tempreature-celsius"></h1>
+        <h3 class="weather-summary"></h3>
+        <div class="city-country">
+          <h2 class="cityName"></h2>
+          <h2 class="country"></h2>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="skycons.js"></script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  color: #000000;
+  font-size: 3rem;
+  font-family: "Caveat", cursive;
+  /* font-family: "Bebas Neue", cursive; */
+  text-align: center;
+  margin: 5vh;
+}
+body {
+  /* background-image: linear-gradient(#490e30, #a73259, #df4c3a, #efa75f);
+  background-attachment: fixed; */
+  background-color: #ffc75f;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+
+#enterCityName {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  width: 300px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  padding-left: 10px;
+}
+#enterCityName::-webkit-search-cancel-button {
+  margin: 10px;
+}
+
+button {
+  font-size: 1rem;
+  font-family: "Bebas Neue", cursive;
+  font-weight: normal;
+  background-color: #ff5e78;
+  color: black;
+  border: none;
+  outline: none;
+  width: 100px;
+  border-radius: 0 5px 5px 0;
+
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  /* border-left: 2px solid black; */
+}
+.message-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container-location {
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid black; */
+  margin-top: 10vh;
+}
+
+.location {
+  /* box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), */
+  /* 0 100px 80px rgba(0, 0, 0, 0.12); */
+
+  font-family: "Bebas Neue", sans-serif;
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+#icon1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tempreature-celsius {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 2vh;
+}
+.weather-summary {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: normal;
+  margin: 1vh;
+}
+.city-country {
+  display: flex;
+  justify-content: center;
+}
+.cityName {
+  font-size: 2rem;
+  float: left;
+  margin: 1vh;
+  margin-left: 2vh;
+}
+.country {
+  font-size: 2rem;
+  margin: 1vh 1vh 1vh 0;
+  float: left;
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    font-size: 2rem;
+  }
+  #enterCityName {
+    width: 200px;
+    height: 50px;
+  }
+  button {
+    width: 80px;
+  }
+  .tempreature-celsius {
+    font-size: 2rem;
+  }
+  .weather-summary {
+    font-size: 1rem;
+  }
+  .cityName,
+  .country {
+    font-size: 1.5rem;
+  }
+}
